@@ -9,13 +9,13 @@
         "jerarquia": [
           {
             "rango": "1. Leyes Marco",
-            "norma": "Ley N° 28611 (Ley General del Ambiente), Ley N° 27446 (Ley del SEIA) y Ley N° 29325 (Ley del SINEFA)",
-            "aplicacion": "Establecen las categorías del SEIA (Cat I: DIA, Cat II: EIA-sd, Cat III: EIA-d) y la potestad sancionadora de OEFA y de las EFA (ministerios, gobiernos regionales y municipalidades)."
+            "norma": "Ley N° 28611 (LGA), Ley N° 27446 (SEIA) y Ley N° 29325 (SINEFA)",
+            "aplicacion": "Establecen las categorías del SEIA (DIA, EIA-sd, EIA-d) y la potestad sancionadora de OEFA y de las EFA locales (municipalidades) y sectoriales."
           },
           {
             "rango": "2. Decretos Supremos (ECA y LMP)",
             "norma": "ECA Agua (D.S. 004-2017-MINAM), ECA Aire (D.S. 003-2017-MINAM), ECA Suelo (D.S. 011-2017-MINAM), ECA Ruido (D.S. 085-2003-PCM)",
-            "aplicacion": "El ECA se mide en el cuerpo receptor (río, aire ambiente, suelo) y no es fiscalizable directamente salvo que se demuestre causalidad. El LMP se mide en la fuente de emisión/efluente y su exceso es infracción directa."
+            "aplicacion": "El ECA mide la calidad en el cuerpo receptor (río, aire, suelo); el LMP mide directamente la descarga o emisión en la fuente."
           }
         ]
       },
@@ -35,21 +35,21 @@
         },
         {
           "id": 102,
-          "tipo": "Caso Práctico - ECA vs LMP",
-          "pregunta": "En un monitoreo ambiental de una obra vial, instalas una estación de calidad de aire a barlovento y otra a sotavento cerca de una población para medir PM10 y PM2.5 en el ambiente. ¿Con qué norma comparas los resultados?",
+          "tipo": "Caso Práctico - ECA Aire",
+          "pregunta": "En un monitoreo ambiental de una obra vial instalas estaciones a barlovento y sotavento para medir PM10 y PM2.5 en el aire ambiente. ¿Con qué norma comparas los resultados?",
           "opciones": [
             "D.S. N° 003-2017-MINAM (ECA para Aire)",
             "D.S. N° 011-2017-MINAM (ECA para Suelo)",
-            "D.S. N° 010-2005-PCM",
-            "D.S. N° 085-2003-PCM (ECA Ruido)"
+            "D.S. N° 085-2003-PCM (ECA Ruido)",
+            "D.S. N° 003-2010-MINAM (LMP PTAR)"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: D.S. N° 003-2017-MINAM (Aprueban Estándares de Calidad Ambiental para Aire). Regula parámetros como PM10 (100 µg/m3 en 24h) y PM2.5 (50 µg/m3 en 24h). Fuente: SINIA - MINAM."
+          "explicacion": "Base Legal: D.S. N° 003-2017-MINAM (ECA para Aire). Fuente: SINIA - MINAM."
         },
         {
           "id": 103,
           "tipo": "Opción Múltiple - ECA Ruido",
-          "pregunta": "Según el D.S. N° 085-2003-PCM (ECA para Ruido), ¿cuál es el nivel máximo de presión sonora continua equivalente (LAeqT) permitido en Zona Residencial en horario DIURNO (07:01 a 22:00 horas)?",
+          "pregunta": "Según el D.S. N° 085-2003-PCM (ECA para Ruido), ¿cuál es el nivel máximo (LAeqT) permitido en Zona Residencial en horario DIURNO (07:01 a 22:00 horas)?",
           "opciones": [
             "60 dBA",
             "50 dBA",
@@ -57,57 +57,33 @@
             "80 dBA"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Anexo N° 1 del D.S. N° 085-2003-PCM. En Zona Residencial es 60 dBA diurno y 50 dBA nocturno. En Zona Comercial es 70/60 dBA y en Zona Industrial es 80/70 dBA. Fuente: MINAM."
+          "explicacion": "Base Legal: Anexo N° 1 del D.S. N° 085-2003-PCM. Residencial: 60 dBA diurno y 50 dBA nocturno. Comercial: 70/60 dBA. Industrial: 80/70 dBA. Fuente: MINAM."
         },
         {
           "id": 104,
           "tipo": "Caso Práctico - ECA Suelo",
-          "pregunta": "En el patio de máquinas y taller mecánico de un campamento de obra ocurre un derrame de hidrocarburos (diésel y aceites usados). Para verificar la remediación del terreno, ¿qué norma aplicas?",
+          "pregunta": "En el patio de máquinas de un campamento vial ocurre un derrame de diésel y aceite usado sobre el suelo. Para verificar la limpieza del área, ¿qué norma aplicas?",
           "opciones": [
-            "D.S. N° 011-2017-MINAM (ECA para Suelo - parámetros Fracción de Hidrocarburos F1, F2 y F3)",
+            "D.S. N° 011-2017-MINAM (ECA para Suelo - Fracciones de Hidrocarburos F1, F2 y F3)",
             "D.S. N° 004-2017-MINAM (ECA Agua)",
-            "D.S. N° 003-2010-MINAM (LMP Efluentes)",
-            "Ley N° 29783 (Ley de SST)"
+            "D.S. N° 003-2010-MINAM",
+            "Ley N° 29783"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: D.S. N° 011-2017-MINAM (ECA para Suelo). Evalúa fracciones de hidrocarburos F1 (C6-C10), F2 (>C10-C28) y F3 (>C28-C40) según uso del suelo (agrícola, residencial/parques o comercial/industrial/extractivo). Fuente: MINAM."
+          "explicacion": "Base Legal: D.S. N° 011-2017-MINAM (ECA para Suelo) y D.S. N° 012-2017-MINAM (Criterios para la Gestión de Sitios Contaminados). Fuente: MINAM."
         },
         {
           "id": 105,
-          "tipo": "Verdadero / Falso - SEIA",
-          "pregunta": "VERDADERO O FALSO: Según la Ley N° 27446 y el D.L. N° 1394, la Certificación Ambiental pierde vigencia si dentro del plazo máximo de cinco (05) años el titular no inicia la ejecución del proyecto.",
-          "opciones": [
-            "Verdadero",
-            "Falso (nunca pierde vigencia)"
-          ],
-          "correcta": 0,
-          "explicacion": "Base Legal: Art. 12 de la Ley N° 27446 (modificado por D.L. N° 1394). El plazo de vigencia es de 5 años para iniciar obras. Fuente: SPIJ."
-        },
-        {
-          "id": 106,
-          "tipo": "Opción Múltiple - SINEFA",
-          "pregunta": "Dentro del Sistema Nacional de Evaluación y Fiscalización Ambiental (Ley N° 29325), ¿qué rol cumple el OEFA respecto a las Municipalidades (EFA locales)?",
-          "opciones": [
-            "Ente Rector: supervisa que las EFA cumplan con sus funciones de fiscalización y aprueba los lineamientos del PLANEFA",
-            "Reemplaza a las municipalidades en el cobro de arbitrios de limpieza",
-            "Otorga las licencias de construcción de obras viales",
-            "Elabora gratuitamente los PIGARS de cada distrito"
-          ],
-          "correcta": 0,
-          "explicacion": "Base Legal: Art. 6 y 7 de la Ley N° 29325 (Ley del SINEFA). El OEFA, como ente rector, supervisa el desempeño de las Entidades de Fiscalización Ambiental (EFA) nacionales, regionales o locales. Fuente: OEFA."
-        },
-        {
-          "id": 107,
           "tipo": "Opción Múltiple - LMP PTAR",
-          "pregunta": "Durante el monitoreo de una PTAR municipal o doméstica de campamento, mides DBO5, DQO y Coliformes Termotolerantes directamente en el tubo de descarga (efluente) antes del río. ¿Con qué norma comparas?",
+          "pregunta": "Mides DBO5, DQO y Aceites y Grasas directamente en el tubo de descarga (efluente) de una PTAR municipal o doméstica antes de que ingrese al río. ¿Qué norma aplicas?",
           "opciones": [
             "D.S. N° 003-2010-MINAM (LMP para efluentes de PTAR domésticas o municipales)",
             "D.S. N° 004-2017-MINAM (ECA Agua)",
-            "D.S. N° 031-2010-SA (Agua consumo humano)",
+            "D.S. N° 031-2010-SA",
             "D.S. N° 010-2019-VIVIENDA (VMA)"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: D.S. N° 003-2010-MINAM. En el efluente (tubo de descarga) se mide LMP; en el río (cuerpo receptor, fuera de la zona de mezcla) se mide ECA Agua (D.S. N° 004-2017-MINAM). Fuente: MINAM."
+          "explicacion": "Base Legal: D.S. N° 003-2010-MINAM. En el tubo de descarga (efluente) se aplica LMP; en el río (cuerpo receptor) se aplica ECA Agua (D.S. N° 004-2017-MINAM). Fuente: MINAM."
         }
       ]
     },
@@ -120,13 +96,8 @@
         "jerarquia": [
           {
             "rango": "1. Reglamento Sectorial Principal",
-            "norma": "D.S. N° 004-2017-MTC (modificado por D.S. N° 008-2019-MTC y D.S. N° 040-2023-MTC)",
-            "aplicacion": "Regula los instrumentos del sector: DIA, EIA-sd, EIA-d, FITSA (para proyectos fuera del SEIA), ITS (modificaciones con impactos no significativos) y el Plan de Cierre de áreas auxiliares."
-          },
-          {
-            "rango": "2. Componentes Auxiliares en Carretera",
-            "norma": "Canteras, DME (Depósitos de Material Excedente), Campamentos, Plantas de Asfalto y Chancado",
-            "aplicacion": "Ninguna área auxiliar puede ser intervenida sin contar con permisos ambientales aprobados, actas de libre disponibilidad del propietario y, para canteras de río, opinión favorable de la ALA/ANA."
+            "norma": "D.S. N° 004-2017-MTC y sus modificatorias (D.S. N° 008-2019-MTC / D.S. N° 040-2023-MTC)",
+            "aplicacion": "Regula DIA, EIA-sd, EIA-d, FITSA, ITS y el cierre de componentes auxiliares (canteras, DME, campamentos y plantas)."
           }
         ]
       },
@@ -134,93 +105,67 @@
         {
           "id": 201,
           "tipo": "Caso Práctico - Obras Viales",
-          "pregunta": "Ejecutas una carretera con EIA-sd aprobado. Por inestabilidad de taludes necesitas habilitar un nuevo DME o modificar componentes auxiliares generando impactos ambientales negativos NO significativos. ¿Qué instrumento tramitas ante la DGAAM-MTC?",
+          "pregunta": "Ejecutas una carretera con EIA-sd aprobado y necesitas habilitar un nuevo DME o modificar un componente auxiliar con impactos negativos NO significativos. ¿Qué instrumento tramitas?",
           "opciones": [
             "Informe Técnico Sustentatorio (ITS)",
             "Ficha Técnica Socio Ambiental (FITSA)",
-            "Un nuevo EIA-d completo",
-            "Solo anotarlo en el cuaderno de obra sin permiso ambiental"
+            "Nuevo EIA-d",
+            "Solo aviso por cuaderno de obra"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Art. 20 del D.S. N° 004-2017-MTC. El ITS se aplica para modificaciones, ampliaciones o mejoras tecnológicas que generen impactos ambientales negativos no significativos. Fuente: MTC / SPIJ."
+          "explicacion": "Base Legal: Art. 20 del D.S. N° 004-2017-MTC. El ITS aplica para modificaciones o ampliaciones con impactos ambientales negativos no significativos. Fuente: MTC."
         },
         {
           "id": 202,
           "tipo": "Opción Múltiple - FITSA",
-          "pregunta": "Para un mantenimiento periódico de vía vecinal o puente modular que NO está en el listado del SEIA ni en Área Natural Protegida, ¿qué instrumento complementario exige el MTC?",
+          "pregunta": "Para el mantenimiento periódico de una vía no comprendida en el SEIA ni en Área Natural Protegida, ¿qué instrumento complementario exige el MTC?",
           "opciones": [
             "Ficha Técnica Socio Ambiental (FITSA)",
-            "Estudio de Impacto Ambiental Detallado (EIA-d)",
+            "EIA-d",
             "PAMA",
-            "Certificación Global SENACE"
+            "IGAC"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Art. 11 del D.S. N° 004-2017-MTC (modificado por D.S. N° 008-2019-MTC). La FITSA aplica a proyectos, actividades y servicios del sector transportes no sujetos al SEIA. Fuente: MTC."
+          "explicacion": "Base Legal: Art. 11 del D.S. N° 004-2017-MTC (modificado por D.S. N° 008-2019-MTC). Fuente: MTC."
         },
         {
           "id": 203,
-          "tipo": "Caso Práctico - Cantera Fluvial",
-          "pregunta": "En tu obra vial necesitas extraer material de acarreo (hormigón/grava) del cauce de un río (cantera fluvial). Además del instrumento ambiental del MTC, ¿qué opinión técnica vinculante de recursos hídricos se requiere?",
+          "tipo": "Caso Práctico - Cantera de Río",
+          "pregunta": "Para extraer material de acarreo del álveo o cauce de un río para tu obra vial, además de la autorización municipal (Ley N° 28221), ¿qué opinión vinculante es obligatoria?",
           "opciones": [
-            "Opinión técnica previa favorable de la Autoridad Nacional del Agua (ANA / ALA) bajo la Ley N° 29338",
-            "Permiso del SERFOR para fauna silvestre",
-            "Licencia de SUNASS",
-            "Autorización de OSINERGMIN"
+            "Opinión técnica previa favorable de la Autoridad Nacional del Agua (ANA / ALA)",
+            "Autorización de SUNASS",
+            "Permiso de OSINERGMIN",
+            "Licencia de DIGESA"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Ley N° 28221 (Ley que regula el derecho por extracción de materiales de los álveos o cauces de los ríos por las municipalidades) y Ley N° 29338 (Ley de Recursos Hídricos). Requiere opinión técnica vinculante de la ALA/ANA. Fuente: ANA / MTC."
+          "explicacion": "Base Legal: Ley N° 28221 y Ley N° 29338 (Ley de Recursos Hídricos). Toda extracción en cauce natural requiere opinión técnica vinculante de la ALA/ANA. Fuente: ANA."
         },
         {
           "id": 204,
           "tipo": "Caso Práctico - Cierre de DME",
-          "pregunta": "Al terminar de disponer material excedente de corte en un DME, ¿cuáles son las actividades obligatorias de cierre según el D.S. N° 004-2017-MTC?",
+          "pregunta": "Al finalizar el uso de un Depósito de Material Excedente (DME) en carretera, ¿qué exige el Plan de Cierre de Componentes Auxiliares del D.S. N° 004-2017-MTC?",
           "opciones": [
-            "Compactación por capas, perfilado de taludes estables, sistemas de drenaje superficial (cunetas de coronación), reposición de topsoil y revegetación",
-            "Dejar los montículos sueltos sin compactar ni drenaje",
-            "Enterrar envases de pintura, filtros de aceite y baterías junto con la tierra",
-            "Quemar la vegetación sobrante sobre el talud"
+            "Compactación, perfilado de taludes estables, obras de drenaje superficial, reposición de suelo orgánico (topsoil) y revegetación",
+            "Dejar el material suelto sin drenaje",
+            "Enterrar residuos peligrosos de taller mecánico en el DME",
+            "Quemar maleza sobre el talud"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Art. 68 del D.S. N° 004-2017-MTC. En un DME solo se dispone material inerte de corte/excavación (nunca residuos peligrosos ni municipales) y debe reconformarse garantizando estabilidad física, hidrológica y biológica. Fuente: MTC."
+          "explicacion": "Base Legal: Art. 68 del D.S. N° 004-2017-MTC. Exige reconformación morfológica, estabilidad física, control de erosión y revegetación. Fuente: MTC."
         },
         {
           "id": 205,
-          "tipo": "Caso Práctico - Hallazgos Arqueológicos",
-          "pregunta": "Durante el movimiento de tierras para el ensanche de la vía, el operador de excavadora encuentra restos de cerámica y muros prehispánicos. ¿Qué procedimiento exigen las normas del Ministerio de Cultura y del MTC?",
+          "tipo": "Caso Práctico - Almacén de Peligrosos",
+          "pregunta": "En el campamento vial instalas el almacén central de residuos peligrosos (aceites usados, trapos con hidrocarburos). ¿Qué exige el Art. 54 del D.S. N° 014-2017-MINAM?",
           "opciones": [
-            "Paralizar inmediatamente las obras en ese sector, acordonar el área y comunicar al Ministerio de Cultura en el marco del Plan de Monitoreo Arqueológico (PMAR)",
-            "Retirar las piezas rápidamente y llevarlas al almacén del campamento para no atrasar la obra",
-            "Cubrir los restos con material de relleno y continuar compactando",
-            "Pedir autorización al alcalde distrital para demoler el muro"
+            "Ambiente techado, cerrado, piso impermeabilizado, sistema de contención de derrames, hojas MSDS, señalización NFPA y extintor",
+            "Acopio sobre suelo natural cubierto con lona",
+            "Enterramiento en trinchera dentro del campamento",
+            "Entrega al camión recolector municipal del distrito"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Reglamento de Intervenciones Arqueológicas (D.S. N° 011-2022-MC) y obligaciones del PMA/PMAR en obras viales. Ante un hallazgo fortuito se paraliza el frente específico y se notifica al Ministerio de Cultura. Fuente: Ministerio de Cultura."
-        },
-        {
-          "id": 206,
-          "tipo": "Opción Múltiple - Residuos de Construcción",
-          "pregunta": "En una obra vial se demuele pavimento asfáltico antiguo y estructuras de concreto. ¿Qué norma sectorial regula la gestión de los Residuos Sólidos de la Construcción y Demolición (RCD)?",
-          "opciones": [
-            "D.S. N° 003-2013-VIVIENDA (modificado por D.S. N° 019-2016-VIVIENDA) en concordancia con el D.L. N° 1278",
-            "D.S. N° 031-2010-SA",
-            "D.S. N° 085-2003-PCM",
-            "Resolución de SUNASS"
-          ],
-          "correcta": 0,
-          "explicacion": "Base Legal: D.S. N° 003-2013-VIVIENDA (Reglamento para la Gestión y Manejo de los Residuos de las Actividades de la Construcción y Demolición) y D.L. N° 1278. Fuente: MVCS / MINAM."
-        },
-        {
-          "id": 207,
-          "tipo": "Caso Práctico - Almacén de Peligrosos en Campamento",
-          "pregunta": "En el campamento de tu obra vial debes implementar el almacén central de residuos sólidos peligrosos (trapos con hidrocarburos, filtros usados, envases de aditivos). Según el D.S. N° 014-2017-MINAM, ¿qué características técnicas son obligatorias?",
-          "opciones": [
-            "Área techada, cerrada, cercada, piso impermeabilizado (losa de concreto), sistema de contención ante derrames, señalización de peligrosidad (rombo NFPA/ONU), hojas MSDS y extintor",
-            "Piso de tierra apisonada al aire libre cubierto solo con un plástico negro",
-            "Junto al comedor de los trabajadores sin ventilación",
-            "Enterrado a 1 metro de profundidad detrás del taller mecánico"
-          ],
-          "correcta": 0,
-          "explicacion": "Base Legal: Art. 54 del D.S. N° 014-2017-MINAM (Almacenamiento central de residuos sólidos peligrosos). Además, su transporte y disposición final debe realizarse exclusivamente mediante una EO-RS registrada en el MINAM. Fuente: MINAM."
+          "explicacion": "Base Legal: Art. 54 del D.S. N° 014-2017-MINAM. Su transporte y disposición final solo puede hacerse mediante una EO-RS autorizada. Fuente: MINAM."
         }
       ]
     },
@@ -229,111 +174,80 @@
       "titulo": "Módulo 3: Fiscalización Municipal (Botaderos, Rellenos, Agua y PTAR)",
       "categoria": "Gestión Pública Municipal",
       "leccion": {
-        "titulo": "Obligaciones Ambientales de las Municipalidades",
+        "titulo": "Obligaciones Ambientales Municipales",
         "jerarquia": [
           {
-            "rango": "1. Residuos Sólidos Municipales (D.L. 1278 y D.S. 014-2017-MINAM)",
-            "norma": "PIGARS (Provincial), PMRS (Distrital), Programa de Segregación en la Fuente, Erradicación de Botaderos",
-            "aplicacion": "Las municipalidades son responsables de la recolección, valorización y disposición final segura en Rellenos Sanitarios. Los botaderos son fiscalizados por el OEFA."
-          },
-          {
-            "rango": "2. Saneamiento, Agua Potable y PTAR",
-            "norma": "D.L. N° 1280 (Ley del Servicio Universal de Agua y Saneamiento), D.S. N° 031-2010-SA (DIGESA) y D.S. N° 010-2019-VIVIENDA (VMA)",
-            "aplicacion": "En zonas rurales, la municipalidad cuenta con un Área Técnica Municipal (ATM) que supervisa a las JASS. El agua potable debe tener >= 0.5 mg/L de cloro residual libre."
+            "rango": "1. Residuos Sólidos y Fiscalización (D.L. 1278 / Ley 29325)",
+            "norma": "PIGARS (Provincial), PMRS (Distrital), PLANEFA, Recuperación/Reconversión de Botaderos",
+            "aplicacion": "Toda municipalidad es una EFA local obligada a aprobar su PLANEFA y gestionar adecuadamente sus residuos y saneamiento."
           }
         ]
       },
       "preguntas": [
         {
           "id": 301,
-          "tipo": "Opción Múltiple - Documentos Municipales",
-          "pregunta": "¿Qué documento de planificación de residuos sólidos debe aprobar una Municipalidad PROVINCIAL y cuál una Municipalidad DISTRITAL según el D.L. N° 1278?",
+          "tipo": "Opción Múltiple - Gestión Municipal",
+          "pregunta": "¿Qué instrumento de planificación de residuos aprueba la Municipalidad PROVINCIAL y cuál la Municipalidad DISTRITAL según el D.L. N° 1278?",
           "opciones": [
             "Provincial: PIGARS / Distrital: Plan Distrital de Manejo de Residuos Sólidos (PMRS)",
-            "Provincial: DIA / Distrital: FITSA",
-            "Ambas solo aprueban un TUPA sin plan de residuos",
-            "Provincial: PMRS / Distrital: PIGARS"
+            "Provincial: PMRS / Distrital: PIGARS",
+            "Ambas aprueban solo una FITSA",
+            "Ninguna está obligada a tener plan"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Art. 23 y 24 del D.L. N° 1278 y Art. 10 del D.S. N° 014-2017-MINAM. El PIGARS es provincial y el PMRS es distrital (actualizados cada 5 años). Fuente: MINAM."
+          "explicacion": "Base Legal: Art. 23 y 24 del D.L. N° 1278 y Art. 10 del D.S. N° 014-2017-MINAM. Fuente: MINAM."
         },
         {
           "id": 302,
-          "tipo": "Caso Práctico - Fiscalización de Botaderos",
-          "pregunta": "Inspeccionas un botadero municipal inventariado por el OEFA como 'Área Degradada por Residuos Sólidos Municipales'. Según los arts. 65 y 66 del D.L. N° 1278, ¿cuáles son los dos únicos instrumentos correctivos para intervenirlo?",
+          "tipo": "Caso Práctico - Botaderos Municipales",
+          "pregunta": "Fiscalizas un botadero categorizado por OEFA como Área Degradada por Residuos Sólidos. ¿Cuáles son los dos únicos instrumentos para su intervención según el D.L. N° 1278?",
           "opciones": [
             "Plan de Recuperación de Áreas Degradadas (para su cierre) o Programa de Reconversión y Manejo (para adecuarlo a relleno sanitario)",
-            "ITS o FITSA",
-            "Licencia de funcionamiento municipal simple",
-            "Dejarlo abierto indefinidamente aplicando cal una vez al año"
+            "FITSA o DIA",
+            "Licencia municipal de funcionamiento",
+            "Quema controlada semanal"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Art. 65 y 66 del D.L. N° 1278 (modificado por D.L. N° 1501) y Título IX del D.S. N° 014-2017-MINAM. Los botaderos se categorizan para Recuperación (cierre técnico) o Reconversión. Fuente: OEFA / MINAM."
+          "explicacion": "Base Legal: Art. 65 y 66 del D.L. N° 1278 y Título IX del D.S. N° 014-2017-MINAM. Fuente: OEFA / MINAM."
         },
         {
           "id": 303,
-          "tipo": "Caso Práctico - Operación de Relleno Sanitario",
-          "pregunta": "Fiscalizas un Relleno Sanitario municipal en operación. ¿Cuáles son los componentes e instalaciones mínimas obligatorias que debes verificar en campo según el Art. 114 y 115 del D.S. N° 014-2017-MINAM?",
+          "tipo": "Caso Práctico - Agua Potable (Cloro Residual)",
+          "pregunta": "Supervisas la red de distribución de agua potable de una localidad y mides el cloro residual libre en el punto más alejado. Según el D.S. N° 031-2010-SA (DIGESA), ¿cuál es el valor mínimo obligatorio?",
           "opciones": [
-            "Impermeabilización de base (geomembrana/geotextil o arcilla), drenaje y tratamiento de lixiviados, chimeneas de evacuación/quema de biogás, cobertura diaria de residuos, drenaje pluvial y pozos de monitoreo",
-            "Solo una trinchera excavada en tierra sin geomembrana ni manejo de lixiviados",
-            "Un horno artesanal para quemar plásticos a cielo abierto",
-            "Descarga directa de lixiviados hacia la quebrada más cercana"
+            "No menor a 0.5 mg/L de cloro residual libre",
+            "0.1 mg/L",
+            "0.0 mg/L si el agua viene de manantial",
+            "5.0 mg/L"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Art. 114 y 115 del D.S. N° 014-2017-MINAM. Todo relleno sanitario exige barrera sanitaria/impermeabilización, manejo de lixiviados y gases, y cobertura diaria para evitar vectores. Fuente: MINAM / OEFA."
+          "explicacion": "Base Legal: Art. 63 y Anexo III del D.S. N° 031-2010-SA (Reglamento de la Calidad del Agua para Consumo Humano). Fuente: DIGESA / SUNASS."
         },
         {
           "id": 304,
-          "tipo": "Opción Múltiple - PLANEFA Municipal",
-          "pregunta": "Toda municipalidad (como EFA local) debe aprobar y registrar anualmente ante el OEFA su instrumento de planificación de fiscalización ambiental. ¿Cómo se denomina?",
+          "tipo": "Opción Múltiple - Descargas al Alcantarillado (VMA)",
+          "pregunta": "Un camal o mercado descarga efluentes no domésticos a la red pública de alcantarillado colapsando la PTAR municipal. ¿Qué norma regula los límites en el alcantarillado?",
           "opciones": [
-            "PLANEFA (Plan Anual de Evaluación y Fiscalización Ambiental)",
-            "ROF Municipal",
-            "CAP",
-            "Plan de Desarrollo Concertado"
+            "D.S. N° 010-2019-VIVIENDA (Reglamento de Valores Máximos Admisibles - VMA)",
+            "D.S. N° 004-2017-MINAM (ECA Agua)",
+            "D.S. N° 003-2010-MINAM",
+            "D.S. N° 085-2003-PCM"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Resolución de Consejo Directivo N° 004-2019-OEFA/CD (Lineamientos para la formulación, aprobación, seguimiento y evaluación del cumplimiento del PLANEFA). Fuente: OEFA."
+          "explicacion": "Base Legal: D.S. N° 010-2019-VIVIENDA. Regula los VMA en el alcantarillado para proteger la infraestructura sanitaria y la PTAR. Fuente: MVCS."
         },
         {
           "id": 305,
-          "tipo": "Caso Práctico - Agua Potable Municipal / JASS",
-          "pregunta": "Realizas la supervisión del sistema de agua potable de un centro poblado rural operado por una JASS con asistencia del Área Técnica Municipal (ATM). Mides el cloro residual libre en la vivienda más alejada de la red y marca 0.1 mg/L. ¿Se cumple la norma?",
+          "tipo": "Opción Múltiple - PLANEFA",
+          "pregunta": "¿Qué instrumento anual de fiscalización ambiental debe aprobar toda municipalidad (EFA local) bajo supervisión del OEFA?",
           "opciones": [
-            "No cumple. Según el D.S. N° 031-2010-SA (DIGESA), el cloro residual libre en cualquier punto de la red no debe ser menor a 0.5 mg/L",
-            "Sí cumple, porque basta con que tenga más de 0.05 mg/L",
-            "Sí cumple, en zonas rurales no es obligatorio clorar el agua",
-            "No cumple, porque el mínimo exigido es 5.0 mg/L"
+            "PLANEFA (Plan Anual de Evaluación y Fiscalización Ambiental)",
+            "TUPA",
+            "ROF",
+            "CAP"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Art. 63 y Anexo III del D.S. N° 031-2010-SA (Reglamento de la Calidad del Agua para Consumo Humano). El límite mínimo en red es 0.5 mg/L de cloro residual libre. Fuente: DIGESA / SUNASS."
-        },
-        {
-          "id": 306,
-          "tipo": "Opción Múltiple - Aguas Residuales No Domésticas (VMA)",
-          "pregunta": "En una ciudad, un camal municipal o mercado descarga sus aguas residuales directamente a la red de alcantarillado sanitario colapsando la PTAR. ¿Qué norma regula las descargas no domésticas al alcantarillado?",
-          "opciones": [
-            "D.S. N° 010-2019-VIVIENDA (Reglamento de Valores Máximos Admisibles - VMA para las descargas de aguas residuales no domésticas en el sistema de alcantarillado sanitario)",
-            "D.S. N° 004-2017-MINAM (ECA Agua)",
-            "D.S. N° 003-2010-MINAM (LMP Efluentes de PTAR)",
-            "Ley N° 27446"
-          ],
-          "correcta": 0,
-          "explicacion": "Base Legal: D.S. N° 010-2019-VIVIENDA. Regula los VMA dentro de la red de alcantarillado (antes de llegar a la PTAR) para proteger las tuberías y el proceso biológico de la planta. Fuente: MVCS / SUNASS."
-        },
-        {
-          "id": 307,
-          "tipo": "Caso Práctico - Lodos de PTAR",
-          "pregunta": "Al supervisar una PTAR municipal, observas que extraen los lodos de las lagunas o lechos de secado. ¿Qué normativa sectorial regula el reaprovechamiento o disposición final de los lodos y biosólidos generados en una PTAR?",
-          "opciones": [
-            "D.S. N° 015-2017-VIVIENDA (Reglamento para el Reaprovechamiento de los Lodos generados en las Plantas de Tratamiento de Aguas Residuales)",
-            "Norma G.050",
-            "D.S. N° 085-2003-PCM",
-            "No existe norma en el Perú para lodos de PTAR"
-          ],
-          "correcta": 0,
-          "explicacion": "Base Legal: D.S. N° 015-2017-VIVIENDA y su norma técnica complementaria. Clasifica los biosólidos en Clase A y Clase B según su estabilización e higienización. Fuente: MVCS."
+          "explicacion": "Base Legal: Ley N° 29325 (Ley del SINEFA) y RCD N° 004-2019-OEFA/CD. Fuente: OEFA."
         }
       ]
     },
@@ -342,112 +256,103 @@
       "titulo": "Módulo 4: SSOMA en Construcción y Obras Viales",
       "categoria": "Seguridad y Salud en el Trabajo",
       "leccion": {
-        "titulo": "Marco Legal SSOMA en Obras",
+        "titulo": "Seguridad en Construcción (Ley 29783, D.S. 011-2019-TR y G.050)",
         "jerarquia": [
           {
-            "rango": "1. Ley General y Reglamento",
-            "norma": "Ley N° 29783 (Ley de Seguridad y Salud en el Trabajo) y D.S. N° 005-2012-TR",
-            "aplicacion": "Aplica a todos los sectores económicos y empleadores públicos o privados. Exige IPERC, Mapa de Riesgos, Comité o Supervisor de SST y capacitaciones."
-          },
-          {
-            "rango": "2. Normas Específicas de Construcción",
-            "norma": "D.S. N° 011-2019-TR (Reglamento de SST para el Sector Construcción) y Norma Técnica G.050 (Seguridad durante la Construcción)",
-            "aplicacion": "Exige el Plan de Seguridad y Salud en el Trabajo (PSST) en cada obra, permisos PETAR para trabajos de alto riesgo (excavaciones, altura, espacios confinados) y ATS diario."
+            "rango": "1. Marco Legal SSOMA",
+            "norma": "Ley N° 29783, D.S. N° 005-2012-TR, D.S. N° 011-2019-TR y Norma Técnica G.050",
+            "aplicacion": "Regula el Plan de SST en obra, Comité/Subcomité de SST (20 o más trabajadores), ATS diario, IPERC y permisos PETAR."
           }
         ]
       },
       "preguntas": [
         {
           "id": 401,
-          "tipo": "Opción Múltiple - Comité de SST",
-          "pregunta": "Según la Ley N° 29783 y el D.S. N° 011-2019-TR, ¿a partir de cuántos trabajadores una empresa o consorcio ejecutor está obligado a constituir un Comité o Subcomité de Seguridad y Salud en el Trabajo bipartito y paritario?",
+          "tipo": "Opción Múltiple - Comité SST",
+          "pregunta": "Según la Ley N° 29783 y el D.S. N° 011-2019-TR, ¿a partir de cuántos trabajadores es obligatorio constituir un Comité o Subcomité de SST en obra?",
           "opciones": [
-            "Con veinte (20) o más trabajadores (con menos de 20 se elige un Supervisor de SST)",
-            "Solo a partir de 100 trabajadores",
-            "Desde 1 trabajador es obligatorio un Comité de 8 personas",
-            "Solo es obligatorio en minería, no en obras viales"
+            "20 o más trabajadores (con menos de 20 se elige un Supervisor de SST)",
+            "50 trabajadores",
+            "100 trabajadores",
+            "5 trabajadores"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Art. 29 de la Ley N° 29783 y D.S. N° 011-2019-TR. Con 20 o más trabajadores corresponde Comité (o Subcomité de obra); con menos de 20 trabajadores los mismos trabajadores eligen un Supervisor. Fuente: MTPE / SUNAFIL."
+          "explicacion": "Base Legal: Art. 29 de la Ley N° 29783 y D.S. N° 011-2019-TR. Fuente: MTPE / SUNAFIL."
         },
         {
           "id": 402,
-          "tipo": "Caso Práctico - Excavación de Zanjas (G.050)",
-          "pregunta": "En una obra de saneamiento o drenaje vial se excava una zanja de 2.20 metros de profundidad en terreno inestable. Según la Norma Técnica G.050, ¿qué medidas de control de alto riesgo son obligatorias?",
+          "tipo": "Caso Práctico - Excavaciones (G.050)",
+          "pregunta": "En una excavación de zanja de más de 1.50 m de profundidad con riesgo de derrumbe, ¿qué exige la Norma Técnica G.050 respecto al entibado y al material extraído?",
           "opciones": [
-            "Entibado o tablestacado de las paredes (o talud adecuado), permiso PETAR, escalera de evacuación a no más de 15 m, y acopio del material excavado a una distancia mínima de la mitad de la profundidad (nunca menor a 0.60 m del borde)",
-            "Colocar el material excavado exactamente al borde de la zanja para hacer contrapeso",
-            "Solo requiere cinta amarilla de plástico sin entibado",
-            "El entibado solo es obligatorio a partir de 5 metros de profundidad"
+            "Entibado/tablestacado o talud seguro, permiso PETAR, y acopiar el material excavado a una distancia mínima igual a la mitad de la profundidad (nunca menor a 0.60 m del borde)",
+            "Acumular el material excavado al ras del borde de la zanja",
+            "Solo colocar cinta amarilla sin entibar",
+            "El entibado solo aplica a partir de 6 metros"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Numeral 23 de la Norma Técnica G.050 (Excavaciones). Exige control de derrumbes (entibado/talud), distancia de seguridad para acopio de material y medios de acceso/salida seguros. Fuente: MVCS / SUNAFIL."
+          "explicacion": "Base Legal: Numeral 23 de la Norma Técnica G.050 (Seguridad durante la Construcción). Fuente: MVCS."
         },
         {
           "id": 403,
-          "tipo": "Opción Múltiple - Trabajos en Altura",
-          "pregunta": "De acuerdo con la Norma Técnica G.050, ¿a partir de qué altura se considera 'Trabajo en Altura' y es obligatorio el uso de sistema de protección contra caídas (arnés de cuerpo completo con doble línea de enganche y amortiguador de impacto)?",
+          "tipo": "Opción Múltiple - Trabajo en Altura",
+          "pregunta": "Según la Norma Técnica G.050, ¿a partir de qué altura se considera trabajo en altura y es obligatorio el sistema de detención de caídas (arnés con doble línea de anclaje)?",
           "opciones": [
-            "A partir de 1.80 metros de altura (o sobre aberturas con riesgo de caída libre)",
-            "Solo a partir de 3.50 metros",
-            "A partir de 5.00 metros",
-            "Solo cuando se trabaja en puentes de más de 10 metros"
+            "1.80 metros",
+            "3.00 metros",
+            "5.00 metros",
+            "2.50 metros"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: Numeral 20 de la Norma Técnica G.050 (Protección en trabajos con riesgo de caída). Todo trabajo a más de 1.80 m requiere sistema de detención de caídas y PETAR. Fuente: MVCS."
+          "explicacion": "Base Legal: Numeral 20 de la Norma Técnica G.050. Fuente: MVCS."
         },
         {
           "id": 404,
-          "tipo": "Caso Práctico - Notificación de Accidentes",
-          "pregunta": "Ocurre un accidente mortal en la obra vial. Según el Art. 82 de la Ley N° 29783 y el Art. 110 del D.S. N° 005-2012-TR, ¿en qué plazo máximo el empleador debe notificarlo al Ministerio de Trabajo (MTPE)?",
-          "opciones": [
-            "Dentro del plazo máximo de veinticuatro (24) horas de ocurrido el hecho",
-            "En el informe mensual del mes siguiente",
-            "Dentro de los 15 días hábiles",
-            "Solo se reporta al finalizar la obra"
-          ],
-          "correcta": 0,
-          "explicacion": "Base Legal: Art. 82 de la Ley N° 29783 y Art. 110 del D.S. N° 005-2012-TR. Los accidentes mortales y los incidentes peligrosos se notifican dentro de las 24 horas mediante el Sistema Informático de Notificación de Accidentes de Trabajo (SAT). Fuente: MTPE / SUNAFIL."
-        },
-        {
-          "id": 405,
-          "tipo": "Opción Múltiple - Código de Colores de Residuos (NTP)",
-          "pregunta": "En tu frente de obra y en la municipalidad debes instalar puntos de acopio de residuos. Según la Norma Técnica Peruana NTP 900.058.2019 (obligatoria por el D.L. N° 1278), ¿cuáles son los 4 colores para residuos del ÁMBITO MUNICIPAL?",
+          "tipo": "Opción Múltiple - Código de Colores NTP",
+          "pregunta": "Según la NTP 900.058.2019 (obligatoria por el D.L. N° 1278), ¿cuáles son los 4 colores de recipientes para residuos del ÁMBITO MUNICIPAL?",
           "opciones": [
             "Verde (Aprovechables), Negro (No aprovechables), Marrón (Orgánicos) y Rojo (Peligrosos)",
-            "Azul (Papel), Amarillo (Metales), Blanco (Plástico) y Plomo (Vidrio)",
-            "Solo tachos verdes para todo tipo de basura",
-            "Naranja, Morado, Celeste y Rosado"
+            "Azul, Amarillo, Blanco y Plomo",
+            "Solo tachos verdes",
+            "Naranja, Celeste, Blanco y Negro"
           ],
           "correcta": 0,
-          "explicacion": "Base Legal: NTP 900.058.2019 (Gestión de Residuos. Código de colores para el almacenamiento de residuos sólidos). Nota clave de fiscalización: En el ámbito MUNICIPAL se usan 4 colores (Verde, Negro, Marrón, Rojo). En el ámbito NO MUNICIPAL (campamento/obra civil) se usan los 7 colores (Amarillo, Azul, Blanco, Plomo, Marrón, Negro, Rojo). Fuente: INACAL / MINAM."
-        },
-        {
-          "id": 406,
-          "tipo": "Opción Múltiple - Documentos de Gestión SSOMA en Obra",
-          "pregunta": "Según el D.S. N° 011-2019-TR, antes de iniciar una actividad diaria en el frente de trabajo (y cuando las condiciones no estén previstas en el IPERC base), el capataz o jefe de grupo junto con los trabajadores deben elaborar en campo el:",
-          "opciones": [
-            "ATS (Análisis de Trabajo Seguro)",
-            "ROF de la empresa",
-            "EIA Semidetallado",
-            "PLANEFA"
-          ],
-          "correcta": 0,
-          "explicacion": "Base Legal: Art. 25 del D.S. N° 011-2019-TR (Reglamento de SST para el Sector Construcción). El ATS permite identificar peligros y establecer medidas de control específicas para la tarea del día con participación de los trabajadores. Fuente: MTPE."
-        },
-        {
-          "id": 407,
-          "tipo": "Opción Múltiple - Jerarquía de Controles",
-          "pregunta": "Al elaborar la matriz IPERC de tu obra vial bajo el Art. 21 de la Ley N° 29783, ¿cuál es el orden correcto (de mayor a menor eficacia) de la Jerarquía de Controles de riesgos?",
-          "opciones": [
-            "1° Eliminación, 2° Sustitución, 3° Controles de Ingeniería, 4° Controles Administrativos / Señalización, 5° EPP",
-            "1° Entregar EPP, 2° Poner carteles, 3° Eliminar el peligro",
-            "1° Multar al trabajador, 2° EPP, 3° Controles de Ingeniería",
-            "El EPP es la primera y única medida que exige la ley"
-          ],
-          "correcta": 0,
-          "explicacion": "Base Legal: Art. 21 de la Ley N° 29783. Los Equipos de Protección Personal (EPP) son siempre la última barrera de control; primero se debe intentar eliminar el peligro, sustituirlo o aplicar controles de ingeniería. Fuente: MTPE."
+          "explicacion": "Base Legal: NTP 900.058.2019. Ámbito Municipal = 4 colores (Verde, Negro, Marrón, Rojo). Ámbito No Municipal (campamento de obra) = 7 colores. Fuente: INACAL / MINAM."
         }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "titulo": "1. Supervisión de DME y Canteras en Obras Viales",
+      "entidad": "MTC / DGAAM",
+      "items": [
+        { "criterio": "Cuenta con Certificación Ambiental aprobada (DIA, EIA-sd, EIA-d, FITSA o ITS si es componente nuevo) y actas de libre disponibilidad del terreno.", "norma": "Art. 15 y 20 del D.S. N° 004-2017-MTC" },
+        { "criterio": "Si es cantera fluvial (cauce de río): cuenta con Opinión Técnica Previa Favorable de la ALA/ANA y autorización municipal.", "norma": "Ley N° 28221 y Ley N° 29338" },
+        { "criterio": "En el DME solo se dispone material excedente de corte inerte (libre de residuos peligrosos, plásticos o restos de asfalto).", "norma": "D.S. N° 004-2017-MTC / D.L. N° 1278" },
+        { "criterio": "Se retiró y almacenó adecuadamente la capa orgánica (topsoil) para usarla en el cierre y revegetación.", "norma": "Art. 68 del D.S. N° 004-2017-MTC" },
+        { "criterio": "El DME cuenta con conformación por capas compactadas, estabilidad de taludes y cunetas de coronación (drenaje pluvial).", "norma": "Manual de Carreteras y D.S. N° 004-2017-MTC" }
+      ]
+    },
+    {
+      "titulo": "2. Fiscalización de Relleno Sanitario / Botadero Municipal",
+      "entidad": "OEFA / Municipalidad",
+      "items": [
+        { "criterio": "La municipalidad cuenta con PIGARS (Provincial) o PMRS (Distrital) vigente y su PLANEFA anual registrado.", "norma": "Art. 23 y 24 del D.L. N° 1278 / RCD 004-2019-OEFA/CD" },
+        { "criterio": "Si es botadero: cuenta con Plan de Recuperación de Áreas Degradadas o Programa de Reconversión aprobado.", "norma": "Art. 65 y 66 del D.L. N° 1278" },
+        { "criterio": "En Relleno Sanitario: impermeabilización de base (geomembrana/arcilla), drenaje y recirculación/tratamiento de lixiviados operativos.", "norma": "Art. 114 y 115 del D.S. N° 014-2017-MINAM" },
+        { "criterio": "Chimeneas de evacuación o quema de biogás instaladas y cobertura diaria de los residuos compactados.", "norma": "Art. 115 del D.S. N° 014-2017-MINAM" },
+        { "criterio": "Ausencia total de quema abierta de basura, segregadores informales o crianza de animales (porcinos) dentro de la infraestructura.", "norma": "D.L. N° 1278 y D.S. N° 014-2017-MINAM" }
+      ]
+    },
+    {
+      "titulo": "3. Supervisión de Agua Potable y PTAR Municipal",
+      "entidad": "SUNASS / DIGESA / MVCS",
+      "items": [
+        { "criterio": "El cloro residual libre medido en la red de distribución de agua potable es mayor o igual a 0.5 mg/L.", "norma": "Art. 63 y Anexo III del D.S. N° 031-2010-SA" },
+        { "criterio": "La PTAR cuenta con sistema de pretratamiento operativo (rejas/desarenador) limpio de sólidos gruesos.", "norma": "Norma Técnica OS.090 (RNE)" },
+        { "criterio": "Se realiza el monitoreo del efluente de la PTAR verificando que DBO5, DQO, SST y Coliformes cumplan los LMP.", "norma": "D.S. N° 003-2010-MINAM" },
+        { "criterio": "Cuenta con Autorización de Vertimiento de Aguas Residuales Tratadas otorgada por la ANA.", "norma": "Ley N° 29338 (Ley de Recursos Hídricos)" },
+        { "criterio": "Los lodos extraídos de la PTAR se estabilizan y disponen según la norma sectorial de biosólidos.", "norma": "D.S. N° 015-2017-VIVIENDA" }
       ]
     }
   ]
