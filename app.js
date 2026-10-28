@@ -16,6 +16,7 @@ const mainContent = document.getElementById('main-content');
 
 function actualizarEstadoRed() {
   const badge = document.getElementById('net-status');
+  if (!badge) return;
   if (navigator.onLine) {
     badge.textContent = '🟢 Online';
   } else {
@@ -169,7 +170,8 @@ function prepararPreguntasAleatorias(listaOriginal, cantidad) {
   const seleccionadas = [...noVistas, ...yaVistas].slice(0, cantidad);
 
   return seleccionadas.map(p => {
-    const textoCorrecto = p.opciones[p.correcta];
+    const idxCorrecto = (typeof p.correcta === 'number' && p.opciones[p.correcta]) ? p.correcta : 0;
+    const textoCorrecto = p.opciones[idxCorrecto];
     const opcionesMezcladas = mezclarArray(p.opciones);
     return {
       ...p,
@@ -284,7 +286,7 @@ function siguientePregunta(esRepaso) {
 }
 
 // ==========================================
-// MÓDULO IA: PREGUNTAS INFINITAS Y ACTUALIZACIÓN NORMATIVA
+// MÓDULO IA CON DOBLE MOTOR (GRATIS SIN CLAVE + GEMINI)
 // ==========================================
 function mostrarPanelIA() {
   const apiKeyGuardada = localStorage.getItem('ecoley_gemini_key') || '';
@@ -295,42 +297,42 @@ function mostrarPanelIA() {
 
   mainContent.innerHTML = `
     <div class="card">
-      <span class="badge badge-ai">Capacitación Continua Online/Offline</span>
+      <span class="badge badge-ai">Doble Motor IA Activo</span>
       <h2>✨ Generador de Nuevas Preguntas y Normas</h2>
-      <p style="font-size:0.85rem; color:#475569;">Cuando tengas internet, genera preguntas nuevas sobre casos reales o pega una norma recién publicada en El Peruano. Se guardarán en tu celular para estudiarlas con o sin conexión.</p>
+      <p style="font-size:0.85rem; color:#475569;">Genera preguntas ilimitadas cuando tengas internet. Se guardan en tu celular para usarlas con o sin señal.</p>
       
-      <label style="font-size:0.82rem; font-weight:bold;">1. Tu Clave Gratuita Gemini API:</label>
-      <input type="password" id="api-key-input" class="input-box" placeholder="Pega aquí tu clave AIzaSy..." value="${apiKeyGuardada}">
-      <button class="btn" style="background:#e2e8f0; margin-top:0; margin-bottom:12px; padding:8px;" onclick="guardarApiKey()">💾 Guardar Clave en mi Celular</button>
-
-      <label style="font-size:0.82rem; font-weight:bold;">2. ¿A qué módulo deseas agregar preguntas?</label>
+      <label style="font-size:0.82rem; font-weight:bold;">1. ¿A qué módulo deseas agregar preguntas?</label>
       <select id="modulo-destino" class="input-box">${opcionesModulos}</select>
 
-      <label style="font-size:0.82rem; font-weight:bold;">3. Tema específico o texto de nueva norma (Opcional):</label>
-      <textarea id="tema-especifico" class="input-box" rows="3" placeholder="Ej: 'Nuevas modificatorias del D.S. 004-2017-MTC', 'Fiscalización de PTAR y lodos', o pega aquí el artículo de un Decreto Supremo nuevo..."></textarea>
+      <label style="font-size:0.82rem; font-weight:bold;">2. Tema específico o nueva norma de El Peruano (Opcional):</label>
+      <textarea id="tema-especifico" class="input-box" rows="3" placeholder="Ej: 'Fiscalización de botaderos OEFA', 'ITS y FITSA en obras viales MTC', 'LMP efluentes PTAR', o deja en blanco para casos variados..."></textarea>
 
       <button class="btn btn-ai" id="btn-generar-ia" onclick="generarPreguntasConIA()">⚡ Crear 5 Preguntas Nuevas Ahora</button>
       <div id="ia-status" style="margin-top:12px; font-size:0.88rem; font-weight:bold;"></div>
+
+      <hr style="margin:16px 0; border:none; border-top:1px solid #e2e8f0;">
+      <label style="font-size:0.78rem; color:#64748b;">Opcional: Clave Gemini (debe empezar con AIzaSy...). Si la dejas vacía, usará el Motor IA Libre automáticamente:</label>
+      <input type="password" id="api-key-input" class="input-box" placeholder="Dejar vacío para modo automático o pegar AIzaSy..." value="${apiKeyGuardada}">
     </div>
   `;
 }
 
-function guardarApiKey() {
-  const val = document.getElementById('api-key-input').value.trim();
-  localStorage.setItem('ecoley_gemini_key', val);
-  alert('¡Clave guardada en tu celular correctamente!');
+function limpiarTextoJSON(texto) {
+  const inicio = texto.indexOf('[');
+  const fin = texto.lastIndexOf(']');
+  if (inicio !== -1 && fin !== -1) {
+    return texto.substring(inicio, fin + 1);
+  }
+  return texto;
 }
 
 async function generarPreguntasConIA() {
   if (!navigator.onLine) {
-    alert('Necesitas conexión a internet para generar preguntas nuevas. Tus preguntas ya guardadas siguen disponibles en la pestaña Módulos.');
+    alert('Necesitas internet para descargar nuevas preguntas.');
     return;
   }
+
   const key = document.getElementById('api-key-input').value.trim();
-  if (!key) {
-    alert('Primero pega tu clave gratuita de Google Gemini en el paso 1.');
-    return;
-  }
   localStorage.setItem('ecoley_gemini_key', key);
 
   const modId = document.getElementById('modulo-destino').value;
@@ -341,53 +343,81 @@ async function generarPreguntasConIA() {
 
   btn.disabled = true;
   statusDiv.style.color = '#7e22ce';
-  statusDiv.textContent = '⏳ Consultando normativa ambiental peruana y redactando 5 preguntas nuevas...';
+  statusDiv.textContent = '⏳ Generando 5 casos prácticos de normativa ambiental peruana (tarda unos 8 segundos)...';
 
-  const prompt = `Actúa como experto en normativa ambiental peruana (MINAM, OEFA, MTC obras viales, MVCS saneamiento, SUNASS, DIGESA y SSOMA Ley 29783 / G.050).
-Genera exactamente 5 preguntas nuevas de nivel especialista para el módulo "${modObj.titulo}".
-${temaUsuario ? 'Enfócate especialmente en esta norma o tema solicitado por el ingeniero: ' + temaUsuario : 'Crea casos prácticos variados de supervisión en campo, obras viales, DME, canteras, botaderos, rellenos sanitarios, PTAR o agua potable.'}
-REGLA ESTRICTA: Cita siempre el número exacto de Ley o Decreto Supremo peruano y el artículo. Si algún dato específico requiere contrastarse con una modificatoria reciente, indícalo como (VERIFICAR en SPIJ/El Peruano).
-Responde ÚNICAMENTE con un arreglo JSON válido sin texto adicional ni bloques markdown, con esta estructura exacta:
+  const prompt = `Eres un experto en normativa ambiental peruana (MINAM, OEFA, MTC obras viales, MVCS saneamiento, SUNASS, DIGESA y SSOMA Ley 29783 / G.050).
+Genera exactamente 5 preguntas de opción múltiple nivel ingeniero especialista para el módulo "${modObj.titulo}".
+${temaUsuario ? 'Tema prioritario solicitado: ' + temaUsuario : 'Crea casos prácticos nuevos de supervisión en campo, obras viales, DME, canteras, botaderos, rellenos sanitarios, PTAR o agua potable.'}
+REGLA: Cita el número exacto de Ley o Decreto Supremo peruano y el artículo en la explicación. Si un artículo específico requiere verificación, añade (VERIFICAR en SPIJ).
+Devuelve ÚNICAMENTE un JSON Array válido sin texto adicional con este formato exacto:
 [
   {
-    "id": ${Date.now()},
-    "tipo": "Caso Práctico - Actualización",
-    "pregunta": "Texto de la pregunta...",
-    "opciones": ["Opción correcta", "Distractor 1", "Distractor 2", "Distractor 3"],
+    "id": 1,
+    "tipo": "Caso Práctico - IA",
+    "pregunta": "¿Pregunta detallada?",
+    "opciones": ["Respuesta correcta", "Opción incorrecta 1", "Opción incorrecta 2", "Opción incorrecta 3"],
     "correcta": 0,
-    "explicacion": "Base Legal: Art. X del D.S. N°... Explicación técnica detallada. Fuente oficial: MINAM/MTC/OEFA/SPIJ."
+    "explicacion": "Base Legal: D.S. N°... Explicación técnica. Fuente: MINAM/MTC/OEFA."
   }
 ]`;
 
-  try {
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { responseMimeType: "application/json" }
-      })
-    });
+  let nuevasPreguntas = null;
 
-    const result = await response.json();
-    const textoJson = result.candidates[0].content.parts[0].text;
-    const nuevasPreguntas = JSON.parse(textoJson);
+  // Intento 1: Si puso una clave válida de Gemini (empieza con AIza)
+  if (key.startsWith('AIza')) {
+    try {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { responseMimeType: "application/json" }
+        })
+      });
+      const result = await response.json();
+      const rawText = result.candidates[0].content.parts[0].text;
+      nuevasPreguntas = JSON.parse(limpiarTextoJSON(rawText));
+    } catch (e) {
+      console.log('Pasando a motor libre de respaldo...');
+    }
+  }
 
+  // Intento 2 (Automático y sin clave): Motor IA Libre Pollinations
+  if (!nuevasPreguntas) {
+    try {
+      const response = await fetch('https://text.pollinations.ai/openai', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'openai',
+          messages: [
+            { role: 'system', content: 'Respondes únicamente con un JSON array válido sin markdown.' },
+            { role: 'user', content: prompt }
+          ]
+        })
+      });
+      const data = await response.json();
+      const rawText = data.choices[0].message.content;
+      nuevasPreguntas = JSON.parse(limpiarTextoJSON(rawText));
+    } catch (err) {
+      statusDiv.style.color = '#ef4444';
+      statusDiv.textContent = '❌ Hubo un corte de red al generar. Intenta tocar el botón nuevamente en unos segundos.';
+      btn.disabled = false;
+      return;
+    }
+  }
+
+  if (Array.isArray(nuevasPreguntas) && nuevasPreguntas.length > 0) {
     nuevasPreguntas.forEach((p, idx) => { p.id = Date.now() + idx; });
-
     if (!preguntasExtraIA[modId]) preguntasExtraIA[modId] = [];
     preguntasExtraIA[modId] = preguntasExtraIA[modId].concat(nuevasPreguntas);
     localStorage.setItem('ecoley_preguntas_ia', JSON.stringify(preguntasExtraIA));
 
     integrarPreguntasIA();
     statusDiv.style.color = '#16a34a';
-    statusDiv.innerHTML = `✅ ¡Se agregaron 5 preguntas nuevas a "${modObj.titulo}"! Ya están guardadas para usar con o sin internet.`;
-  } catch (err) {
-    statusDiv.style.color = '#ef4444';
-    statusDiv.textContent = '❌ Error al generar. Verifica que tu API Key esté bien copiada y tengas conexión.';
-  } finally {
-    btn.disabled = false;
+    statusDiv.innerHTML = `✅ ¡Listo! Se crearon y guardaron ${nuevasPreguntas.length} preguntas nuevas en "${modObj.titulo}". Ve a la pestaña Módulos para entrenarlas.`;
   }
+  btn.disabled = false;
 }
 
 // ==========================================
@@ -400,7 +430,7 @@ function mostrarChecklists() {
 
   listas.forEach(chk => {
     let itemsHtml = '';
-    chk.items.forEach((it, i) => {
+    chk.items.forEach(it => {
       itemsHtml += `
         <label class="check-item">
           <input type="checkbox">
