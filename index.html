@@ -10,22 +10,26 @@
     * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
     body { margin: 0; background-color: #f0fdf4; color: #1e293b; display: flex; justify-content: center; }
     .app-container { width: 100%; max-width: 480px; min-height: 100vh; background: #ffffff; display: flex; flex-direction: column; box-shadow: 0 0 15px rgba(0,0,0,0.08); }
-    header { background: #16a34a; color: white; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; font-weight: bold; position: sticky; top: 0; z-index: 10; }
-    .stats { display: flex; gap: 12px; font-size: 0.95rem; }
+    header { background: #16a34a; color: white; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; font-weight: bold; position: sticky; top: 0; z-index: 10; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .stats { display: flex; gap: 10px; font-size: 0.9rem; background: rgba(0,0,0,0.15); padding: 6px 10px; border-radius: 20px; }
     .content { padding: 18px; flex: 1; }
-    .card { background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 14px; padding: 16px; margin-bottom: 16px; }
-    .badge { display: inline-block; background: #dcfce7; color: #15803d; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; margin-bottom: 8px; }
-    h2 { margin: 6px 0 12px 0; font-size: 1.25rem; color: #0f172a; }
-    .btn { width: 100%; padding: 14px; border: none; border-radius: 12px; font-size: 1rem; font-weight: 700; cursor: pointer; margin-top: 10px; transition: transform 0.1s; }
+    .card { background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 14px; padding: 16px; margin-bottom: 16px; position: relative; }
+    .card.locked { opacity: 0.65; background: #f1f5f9; border-style: dashed; }
+    .badge { display: inline-block; background: #dcfce7; color: #15803d; padding: 4px 10px; border-radius: 20px; font-size: 0.78rem; font-weight: 700; margin-bottom: 8px; }
+    .badge-warn { background: #fef3c7; color: #b45309; }
+    h2 { margin: 6px 0 10px 0; font-size: 1.2rem; color: #0f172a; }
+    .btn { width: 100%; padding: 13px; border: none; border-radius: 12px; font-size: 0.95rem; font-weight: 700; cursor: pointer; margin-top: 8px; transition: transform 0.1s; }
     .btn:active { transform: scale(0.98); }
+    .btn:disabled { background: #cbd5e1; color: #64748b; box-shadow: none; cursor: not-allowed; }
     .btn-primary { background: #16a34a; color: white; box-shadow: 0 4px 0 #15803d; }
     .btn-secondary { background: #0284c7; color: white; box-shadow: 0 4px 0 #0369a1; }
-    .option-btn { width: 100%; text-align: left; padding: 14px; margin-bottom: 10px; border: 2px solid #cbd5e1; border-radius: 12px; background: white; font-size: 0.95rem; font-weight: 500; cursor: pointer; }
+    .btn-warning { background: #ea580c; color: white; box-shadow: 0 4px 0 #c2410c; }
+    .option-btn { width: 100%; text-align: left; padding: 14px; margin-bottom: 10px; border: 2px solid #cbd5e1; border-radius: 12px; background: white; font-size: 0.95rem; font-weight: 500; cursor: pointer; line-height: 1.35; }
     .option-btn.correct { background: #dcfce7; border-color: #16a34a; color: #14532d; font-weight: 700; }
     .option-btn.wrong { background: #fee2e2; border-color: #ef4444; color: #7f1d1d; }
-    .progress-bar { width: 100%; height: 10px; background: #e2e8f0; border-radius: 8px; overflow: hidden; margin-bottom: 16px; }
+    .progress-bar { width: 100%; height: 10px; background: #e2e8f0; border-radius: 8px; overflow: hidden; margin-bottom: 14px; }
     .progress-fill { height: 100%; background: #22c55e; width: 0%; transition: width 0.3s; }
-    .feedback-box { padding: 14px; border-radius: 12px; margin-top: 14px; font-size: 0.9rem; line-height: 1.4; display: none; }
+    .feedback-box { padding: 14px; border-radius: 12px; margin-top: 12px; font-size: 0.9rem; line-height: 1.45; display: none; }
     .feedback-ok { background: #dcfce7; border: 1px solid #16a34a; color: #14532d; }
     .feedback-err { background: #fee2e2; border: 1px solid #ef4444; color: #7f1d1d; }
     .law-item { border-left: 4px solid #16a34a; padding-left: 12px; margin-bottom: 14px; }
@@ -36,9 +40,11 @@
 <body>
   <div class="app-container">
     <header>
-      <div>🌿 EcoLey Perú</div>
+      <div>🌿 EcoLey</div>
       <div class="stats">
-        <span id="xp-display">⚡ 0 XP</span>
+        <span id="streak-display" title="Racha de días">🔥 0</span>
+        <span id="lives-display" title="Vidas">❤️ 5</span>
+        <span id="xp-display" title="Puntos de experiencia">⚡ 0</span>
       </div>
     </header>
     <div class="content" id="main-content">
