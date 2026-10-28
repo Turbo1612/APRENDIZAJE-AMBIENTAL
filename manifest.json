@@ -1,0 +1,8 @@
+{
+  "name": "EcoLey Perú - Entrenador Ambiental",
+  "short_name": "EcoLey",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#16a34a"
+}
