@@ -1,0 +1,159 @@
+{
+  "modulos": [
+    {
+      "id": "mod_1",
+      "titulo": "Módulo 1: Gestión Ambiental en Obras Viales y Residuos",
+      "categoria": "MTC / MINAM / Municipal",
+      "leccion": {
+        "titulo": "Base Legal Esencial: Obras Viales y Fiscalización",
+        "jerarquia": [
+          {
+            "rango": "1. Ley / Decreto Legislativo",
+            "norma": "Ley N° 27446 (Ley del SEIA) y D.L. N° 1278 (Ley de Gestión Integral de Residuos Sólidos)",
+            "aplicacion": "Ninguna obra vial o proyecto de infraestructura puede iniciarse sin Certificación Ambiental. Los residuos de obra y municipales se rigen bajo la priorización de valorización sobre disposición final."
+          },
+          {
+            "rango": "2. Decreto Supremo (Reglamentos)",
+            "norma": "D.S. N° 004-2017-MTC (RPAA del Sector Transportes) y D.S. N° 014-2017-MINAM (Reglamento del D.L. 1278)",
+            "aplicacion": "Regulan la Ficha Técnica Ambiental (FTA), el EIA, el cierre de canteras y DME (Depósitos de Material Excedente), así como las obligaciones de las municipalidades en botaderos y rellenos sanitarios."
+          },
+          {
+            "rango": "3. Ejemplo real de campo",
+            "norma": "Supervisión de DME y Botaderos",
+            "aplicacion": "En obra vial: Si necesitas abrir un DME nuevo que no estaba en el EIA aprobado, debes tramitar un ITS (Informe Técnico Sustentatorio) antes de depositar material. En municipalidad: Un botadero no autorizado es sujeto de reconversión o cierre bajo fiscalización de OEFA."
+          }
+        ]
+      },
+      "preguntas": [
+        {
+          "id": 1,
+          "tipo": "Caso Práctico - Obras Viales",
+          "pregunta": "Estás en plena ejecución de una carretera con EIA-sd aprobado. Por estabilidad de taludes, necesitas habilitar un nuevo Depósito de Material Excedente (DME) fuera del área de influencia directa o modificar componentes auxiliares con impactos no significativos. ¿Qué instrumento debes gestionar ante la DGAAM-MTC antes de intervenir?",
+          "opciones": [
+            "Informe Técnico Sustentatorio (ITS)",
+            "Ficha Técnica Socio Ambiental (FITSA)",
+            "Declaración de Impacto Ambiental (DIA)",
+            "Solo informarlo en el Informe Trimestral sin permiso previo"
+          ],
+          "correcta": 0,
+          "explicacion": "Base Legal: Art. 20 del D.S. N° 004-2017-MTC (Reglamento de Protección Ambiental para el Sector Transportes). El ITS procede para modificaciones, ampliaciones o mejoras tecnológicas con impactos ambientales negativos no significativos. Fuente oficial: Portal del MTC / SPIJ."
+        },
+        {
+          "id": 2,
+          "tipo": "Opción Múltiple - MTC",
+          "pregunta": "Para un mantenimiento periódico de una vía departamental o vecinal que NO se encuentra dentro del listado del SEIA ni en Áreas Naturales Protegidas, ¿qué instrumento complementario exige la normativa del Sector Transportes?",
+          "opciones": [
+            "Estudio de Impacto Ambiental Detallado (EIA-d)",
+            "Ficha Técnica Socio Ambiental (FITSA)",
+            "PAMA (Programa de Adecuación y Manejo Ambiental)",
+            "IGAC"
+          ],
+          "correcta": 1,
+          "explicacion": "Base Legal: Art. 11 del D.S. N° 004-2017-MTC (modificado por D.S. N° 008-2019-MTC). La FITSA es el instrumento de gestión ambiental complementario para proyectos, actividades o servicios de transporte que no están sujetos al SEIA. Fuente oficial: Portal MTC / El Peruano."
+        },
+        {
+          "id": 3,
+          "tipo": "Verdadero / Falso - Obras Viales",
+          "pregunta": "VERDADERO O FALSO: Según el D.S. N° 004-2017-MTC, la vigencia de la Certificación Ambiental caduca si el titular no inicia las obras dentro de los cinco (05) años posteriores a su aprobación.",
+          "opciones": [
+            "Verdadero",
+            "Falso (caduca a los 2 años)"
+          ],
+          "correcta": 0,
+          "explicacion": "Base Legal: Art. 17 del D.S. N° 004-2017-MTC (en concordancia con el D.L. N° 1394 que modificó la Ley N° 27446, Ley del SEIA). La certificación ambiental pierde vigencia si dentro del plazo máximo de 5 años el titular no inicia la ejecución del proyecto. Fuente oficial: SPIJ / MINAM."
+        },
+        {
+          "id": 4,
+          "tipo": "Opción Múltiple - Residuos Sólidos",
+          "pregunta": "De acuerdo con la Ley de Gestión Integral de Residuos Sólidos, ¿qué instrumento de planificación ambiental a nivel provincial deben aprobar y actualizar las Municipalidades Provinciales?",
+          "opciones": [
+            "PMRS (Plan Distrital de Manejo de Residuos Sólidos)",
+            "PIGARS (Plan Provincial de Gestión Integral de Residuos Sólidos)",
+            "EIA del Relleno Sanitario",
+            "Plan Anual de Evaluación y Fiscalización Ambiental (PLANEFA)"
+          ],
+          "correcta": 1,
+          "explicacion": "Base Legal: Art. 23 del D.L. N° 1278 y Art. 10 del D.S. N° 014-2017-MINAM. Las Municipalidades Provinciales formulan su PIGARS, mientras que las Distritales elaboran su Plan Distrital de Manejo de Residuos Sólidos (PMRS). Fuente oficial: Portal MINAM / SPIJ."
+        },
+        {
+          "id": 5,
+          "tipo": "Caso Práctico - Fiscalización Municipal",
+          "pregunta": "Fiscalizas un botadero municipal y verificas que el terreno tiene pendiente pronunciada, quema de basura a cielo abierto y está a menos de 500 metros de una población. Según el D.L. N° 1278, las áreas degradadas por residuos sólidos (botaderos) se dividen en dos categorías para su intervención:",
+          "opciones": [
+            "Recuperación (cierre) y Reconversión (a infraestructura formal)",
+            "Clausura temporal y Clausura definitiva",
+            "Mitigación simple y Abandono técnico",
+            "Relleno manual y Relleno mecanizado"
+          ],
+          "correcta": 0,
+          "explicacion": "Base Legal: Art. 65 y 66 del D.L. N° 1278 y Título IX del D.S. N° 014-2017-MINAM. Las áreas degradadas por residuos sólidos deben ser recuperadas (Plan de Recuperación para su cierre) o reconvertidas (Programa de Reconversión y Manejo de Áreas Degradadas). Fuente oficial: OEFA / MINAM."
+        },
+        {
+          "id": 6,
+          "tipo": "Opción Múltiple - Fiscalización SINEFA",
+          "pregunta": "Como Entidad de Fiscalización Ambiental (EFA) de ámbito local, toda municipalidad está obligada a aprobar anualmente su instrumento de planificación de fiscalización ambiental. ¿Cuál es este documento?",
+          "opciones": [
+            "PLANEFA (Plan Anual de Evaluación y Fiscalización Ambiental)",
+            "ROF (Reglamento de Organización y Funciones)",
+            "TUPA Municipal",
+            "POI (Plan Operativo Institucional)"
+          ],
+          "correcta": 0,
+          "explicacion": "Base Legal: Ley N° 29325 (Ley del SINEFA) y Lineamientos del PLANEFA aprobados por Resolución de Consejo Directivo N° 004-2019-OEFA/CD. Toda EFA local (municipalidad) debe aprobar y registrar su PLANEFA ante el OEFA. Fuente oficial: Portal OEFA."
+        },
+        {
+          "id": 7,
+          "tipo": "Opción Múltiple - ECA y LMP (MINAM)",
+          "pregunta": "Durante el monitoreo de una Planta de Tratamiento de Aguas Residuales (PTAR) municipal o de campamento, mides la concentración de DBO5, DQO y Aceites y Grasas directamente en el tubo de descarga (efluente) antes de que entre al río. ¿Con qué norma comparas este resultado?",
+          "opciones": [
+            "LMP para efluentes de PTAR domésticas o municipales (D.S. N° 003-2010-MINAM)",
+            "ECA para Agua (D.S. N° 004-2017-MINAM)",
+            "Valores Máximos Admisibles - VMA (D.S. N° 010-2019-VIVIENDA)",
+            "Reglamento de Calidad de Agua para Consumo Humano (D.S. N° 031-2010-SA)"
+          ],
+          "correcta": 0,
+          "explicacion": "Base Legal: D.S. N° 003-2010-MINAM (Aprueban Límites Máximos Permisibles para los efluentes de Plantas de Tratamiento de Aguas Residuales Domésticas o Municipales). Recuerda: en el punto de descarga (efluente) se mide LMP; en el cuerpo receptor (río/lago) se mide ECA Agua (D.S. N° 004-2017-MINAM). Fuente oficial: SINIA - MINAM."
+        },
+        {
+          "id": 8,
+          "tipo": "Caso Práctico - Obras Viales (Canteras y DME)",
+          "pregunta": "Al finalizar la explotación de una cantera de río y un DME en tu obra vial, ¿qué obligación técnica exige el Plan de Cierre de Componentes Auxiliares según el D.S. N° 004-2017-MTC?",
+          "opciones": [
+            "Reconformación morfológica (perfilado de taludes), revegetación (según corresponda al ecosistema) y restitución de las condiciones del área intervenida",
+            "Dejar el material acopiado para que la municipalidad lo use sin perfilar taludes",
+            "Solo retirar la maquinaria pesada y colocar un cartel de obra terminada",
+            "Quemar los restos vegetales del desbroce dentro del DME"
+          ],
+          "correcta": 0,
+          "explicacion": "Base Legal: Art. 68 y Anexo del D.S. N° 004-2017-MTC. Los titulares están obligados a ejecutar el cierre progresivo y final de áreas auxiliares (canteras, DME, campamentos, plantas de chancado/asfalto) garantizando la estabilidad física y revegetación. Fuente oficial: MTC."
+        },
+        {
+          "id": 9,
+          "tipo": "Opción Múltiple - SSOMA en Obra",
+          "pregunta": "¿Cuál es la norma técnica peruana específica que regula la Seguridad durante la Construcción (excavaciones, trabajos en altura, EPP, orden y limpieza en obras civiles y viales), complementaria a la Ley N° 29783?",
+          "opciones": [
+            "Norma Técnica G.050 (Seguridad durante la Construcción) y D.S. N° 011-2019-TR",
+            "D.S. N° 024-2016-EM (Reglamento de Seguridad y Salud Ocupacional en Minería)",
+            "Ley N° 28611 (Ley General del Ambiente)",
+            "Resolución Ministerial N° 375-2008-TR ( solo ergonomía)"
+          ],
+          "correcta": 0,
+          "explicacion": "Base Legal: Norma Técnica G.050 del Reglamento Nacional de Edificaciones y el D.S. N° 011-2019-TR (Reglamento de Seguridad y Salud en el Trabajo para el Sector Construcción), bajo el marco de la Ley N° 29783 (Ley de SST). Fuente oficial: MTPE / MVCS."
+        },
+        {
+          "id": 10,
+          "tipo": "Opción Múltiple - Agua y Saneamiento Municipal",
+          "pregunta": "Cuando fiscalizas un sistema de abastecimiento de agua para consumo humano en el ámbito municipal o rural (JASS / ATM), ¿qué norma establece que el cloro residual libre en cualquier punto de la red de distribución no debe ser menor a 0.5 mg/L?",
+          "opciones": [
+            "D.S. N° 031-2010-SA (Reglamento de la Calidad del Agua para Consumo Humano - DIGESA)",
+            "D.S. N° 004-2017-MINAM (ECA Agua)",
+            "D.L. N° 1280 (Ley del Servicio Universal de Agua Potable y Saneamiento)",
+            "Norma OS.090 (Plantas de Tratamiento de Aguas Residuales)"
+          ],
+          "correcta": 0,
+          "explicacion": "Base Legal: Art. 63 y Anexo III del D.S. N° 031-2010-SA (Reglamento de la Calidad del Agua para Consumo Humano). Establece que para una desinfección eficaz, la muestra no debe dar menos de 0.5 mg/L de cloro residual libre en la red. Fuente oficial: DIGESA / MINSA / SUNASS."
+        }
+      ]
+    }
+  ]
+}
