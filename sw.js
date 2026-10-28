@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ecoley-v2';
+const CACHE_NAME = 'ecoley-v3-hybrid';
 const ASSETS = ['./', './index.html', './app.js', './normativa.json', './manifest.json'];
 
 self.addEventListener('install', e => {
@@ -14,6 +14,15 @@ self.addEventListener('activate', e => {
   );
 });
 
+// Estrategia Network-First: Si hay internet, trae lo último; si no hay, usa caché offline
 self.addEventListener('fetch', e => {
-  e.respondWith(caches.match(e.request).then(res => res || fetch(e.request)));
+  e.respondWith(
+    fetch(e.request)
+      .then(res => {
+        const resClone = res.clone();
+        caches.open(CACHE_NAME).then(cache => cache.put(e.request, resClone));
+        return res;
+      })
+      .catch(() => caches.match(e.request))
+  );
 });
