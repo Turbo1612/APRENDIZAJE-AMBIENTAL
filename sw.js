@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ecoley-v5-auto';
+const CACHE_NAME = 'ecoley-v6-niveles';
 const ASSETS = ['./', './index.html', './app.js', './normativa.json', './manifest.json'];
 
 self.addEventListener('install', e => {
